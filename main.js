@@ -9,3 +9,13 @@ ipcRenderer.on('todo:add', (event, todo) => {
   li.appendChild(text);
   document.querySelector('ul').appendChild(li);
 });
+
+ipcRenderer.on('todo:clear', () => {
+  const ul = document.querySelector('ul');
+  while (ul.firstChild) {
+    ul.removeChild(ul.firstChild);
+  }
+
+  // or
+  // ul.innerHTML = '';
+});
