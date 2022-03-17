@@ -1,0 +1,14 @@
+{
+  "name": "snacks",
+  "version": "1.0.0",
+  "description": "todo app",
+  "main": "index.js",
+  "scripts": {
+    "electron": "electron ."
+  },
+  "author": "John Wells",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^17.1.2"
+  }
+}
